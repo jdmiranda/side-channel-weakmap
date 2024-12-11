@@ -1,5 +1,5 @@
 declare namespace getSideChannelWeakMap {
-	type Channel<V, K> = {
+	type Channel<K, V> = {
 		assert: (key: K) => void;
 		has: (key: K) => boolean;
 		get: (key: K) => V | undefined;
@@ -8,8 +8,8 @@ declare namespace getSideChannelWeakMap {
 	}
 }
 
-declare function getSideChannelWeakMap<V, K>(): getSideChannelWeakMap.Channel<V, K>;
+declare function getSideChannelWeakMap<V, K>(): getSideChannelWeakMap.Channel<K, V>;
 
-declare const x: false | typeof getSideChannelWeakMap
+declare const x: false | typeof getSideChannelWeakMap;
 
 export = x;
