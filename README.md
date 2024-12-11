@@ -22,9 +22,9 @@ npm install --save side-channel-weakmap
 
 ```js
 const assert = require('assert');
-const getSideChannelList = require('side-channel-weakmap');
+const getSideChannelWeakMap = require('side-channel-weakmap');
 
-const channel = getSideChannelList();
+const channel = getSideChannelWeakMap();
 
 const key = {};
 assert.equal(channel.has(key), false);
