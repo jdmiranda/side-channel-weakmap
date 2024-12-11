@@ -8,7 +8,7 @@ declare namespace getSideChannelWeakMap {
 	}
 }
 
-declare function getSideChannelWeakMap<V, K>(): getSideChannelWeakMap.Channel<K, V>;
+declare function getSideChannelWeakMap<K, V>(): getSideChannelWeakMap.Channel<K, V>;
 
 declare const x: false | typeof getSideChannelWeakMap;
 
